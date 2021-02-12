@@ -1,0 +1,8 @@
+ int x=10;
+ char ch='a';
+ float f =1.5;
+ double d = 1.456;
+ bool b = 1;  true=1, false =0;
+ string str ="Amit";
+ long int y =12345678;
+ short int s =1;
