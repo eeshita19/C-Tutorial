@@ -1,0 +1,10 @@
+ceil(number):	rounds up the given number. It returns the integer value which is greater than or equal to given number.
+
+floor(number)	rounds down the given number. It returns the integer value which is less than or equal to given number.
+
+sqrt(number)	returns the square root of given number.
+
+pow(base, exponent)	returns the power of given number.
+
+abs(number)	returns the absolute value of given number.
+

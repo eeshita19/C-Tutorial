@@ -1,0 +1,86 @@
+String Functions :
+
+
+#include<bits/stdc++.h>
+
+string su = "Welcome To Kr";
+
+    // using transform() function and ::toupper in STL
+    transform(su.begin(), su.end(), su.begin(), ::toupper);
+    cout << su << endl;
+
+    // sl is the string which is converted to lowercase
+    string sl = "Welcome To Kr";
+
+    // using transform() function and ::tolower in STL
+    transform(sl.begin(), sl.end(), sl.begin(), ::tolower);
+    cout << sl << endl;
+
+-----------------------------------
+cut substring from string :
+
+ substr(s1,s2)
+
+s1=from where
+s2=how many char you want cut:
+
+string su = "Welcome To Kr";
+string st =su.substr(2,4);
+cout<<st;
+ 
+------------------------------------
+string str = "welcome to kr to network to";
+string str1 = "to";
+
+    // Find first occurrence of "to"
+    size_t found = str.find(str1);
+    if (found != string::npos)
+        cout << "First occurrence is " << found << endl;
+
+    // Find next occurrence of "to". Note here we pass
+    // "to" as C style string.
+   /* char arr[] = "to";
+    found = str.find(arr, found+1); //second arg is from where you want to find
+    if (found != string::npos)
+        cout << "Next occurrence is " << found << endl; */
+
+
+
+-----------------------------
+#include<string>
+
+string str;
+getline(cin,str);
+cout<<str<<endl;
+str.push_back('s'); //insert a char at end
+cout<<str<<endl;
+str.pop_back();  //delete a char from end
+cout<<str<<endl;
+
+----------
+
+#include<array>
+#include<tuple>
+
+Array Class In C++:
+
+array<int,6> ar = {1, 2, 3, 4, 5, 6};
+for (int x=0;x<6;x++){
+    cout<<ar.at(x)<<endl;
+}
+
+
+at() :- This function is used to access the elements of array.
+get() :- This function is also used to access the elements of array. 
+         This function is not the member of array
+         class but overloaded function from class tuple.
+
+ex:
+   cout << get<0>(ar);
+
+front() :- This returns the first element of array.
+back() :- This returns the last element of array.
+
+size() :- It returns the number of elements in array. 
+This is a property that C-style arrays lack.
+swap() :- The swap() swaps all elements of one array with other.
